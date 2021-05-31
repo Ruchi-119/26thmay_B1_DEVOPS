@@ -1,0 +1,2 @@
+#task1
+mkdir -p a/{b/{d/k/n/lnb,e/{k/n/lnb,j/m/lnb},f/{j/m/lnb,i/n/lnb}},c/{g/{i/n/lnb,l/m/lnb},h/l/m/lnb}}
