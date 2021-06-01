@@ -26,4 +26,4 @@ echo $SHELL
 sudo useradd ru
 ## for disable its login
 sudo passwd -l ru
-<img src = "task2b.PNG>
+<img src ="task2b.png">
