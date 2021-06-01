@@ -16,7 +16,7 @@ sudo usermod -s /usr/bin/dash ru
 su - ru
 ## for check the current shell
 echo $SHELL
-<img src = "task2.PNG">
+<img src = "task2.png">
 
 
 
