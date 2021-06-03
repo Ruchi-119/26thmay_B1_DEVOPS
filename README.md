@@ -1,5 +1,6 @@
 # 26thmay_B1_DEVOPS
 #### task 1a
+
 sudo adduser test
 
  su - test
@@ -10,6 +11,7 @@ sudo adduser test
 
 
 #### task 1b
+
  mkdir welcome
  sudo groupadd lnb
  sudo chgrp lnb welcome/
@@ -18,6 +20,7 @@ sudo adduser test
 
 
 ####task 1c
+
  sudo useradd u1
  sudo useradd u2
  sudo useradd u3
