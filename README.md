@@ -42,3 +42,8 @@ sudo adduser test
 <img src ="task1(c).PNG">
 
 
+### task2
+ sudo dpkg -P vim
+ <img src ="task2a.PNG">
+
+
