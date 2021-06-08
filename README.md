@@ -48,5 +48,30 @@ to check the mounted drive
  
  <img src =day10e.PNG>
  
+ ### to install apache 
+ 
+ apt install apache2
+ 
+ ### to change the root directory from /var/www/html to /mnt/new
+ 
+ copy the file 
+ 
+  cp var/www/html /mnt/new
+  
+ change the root directory
+  
+  vi /etc/apache2/sites-enabled/000-default.conf
+   
+   DocumentRoot /mnt/new
+   
+   
+ to check the root directory
+ 
+ grep -i 'DocumentRoot' /etc/apache2/sites-available/000-default.conf
+  
+ <img src = day10f.PNG>
+ 
+ 
+ 
  
 
