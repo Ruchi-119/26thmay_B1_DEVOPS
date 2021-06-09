@@ -1,24 +1,14 @@
 # 26thmay_B1_DEVOPS
-### for creating a new directory in /mnt
+## Task 1
 
-
-cd /mnt
-
-mkdir new
-
-ls
-
-<img src= day10a.PNG>
-
-### after create a volume EBS and attach to ubuntu instance
+after creating a volume
 
 fdisk -l
 
 
-<img src = day10b.PNG>
+<img src =day12a.PNG>
 
-
-### creating a partition and formating
+for creating a partition
 
 fdisk /dev/xvdf
 
@@ -26,52 +16,51 @@ type p
 
 type n
 
-create a new partition of 500 mb
+enter //default partition type
 
- +500M
- 
- <img src = day10c.PNG>
- 
- for formating
- 
- mkfs.xfs /dev/xvdf1
- 
-<img src = day10d.PNG>
+enter    // first sector
 
-### for mounting in /mnt/new
++500M   // last sector 
 
-mount /dev/xvdf1 /mnt/new
+w //saving the partition
 
-to check the mounted drive
- 
- df -hT
- 
- <img src =day10e.PNG>
- 
- ### to install apache 
- 
- apt install apache2
- 
- ### to change the root directory from /var/www/html to /mnt/new
- 
- copy the file 
- 
-  cp var/www/html /mnt/new
-  
- change the root directory
-  
-  vi /etc/apache2/sites-enabled/000-default.conf
-   
-   DocumentRoot /mnt/new
-   
-   
- to check the root directory
- 
- grep -i 'DocumentRoot' /etc/apache2/sites-available/000-default.conf
-  
- <img src = day10f.PNG>
- 
- 
- 
- 
+<img src =day12b.PNG>
 
+mkfs.ext4 /dev/xvdf1 //formating
+
+mmkdir welcome
+
+mount /dev/xvdf1 welcome/   //for mounting at location /root/welcome
+
+<img src = "day12d.PNG">
+
+## task2
+
+cd welcome
+
+vim index.html // create index.html in mounted location "/root/welcome"
+
+Hii LNB
+
+<img src= day12e.PNG>
+
+### task 3 
+
+after dettach the volume and attach to new instances
+
+ apt install apache2 // for install apache2 
+ 
+systemctl status apache2 // check the apache2 status
+
+mkdir new
+
+
+cd /etc/apache2/sites-available 
+
+vim 000-defualt.conf
+
+DocumentRoot "/Root/new"   // CHange the DocumentRoot /var/www/html to /root/new
+
+grep -i "DocumentRoot" /etc/apache2/sites-available/000-defualt.conf  //to check the root
+
+<img src = "day12f.PNG">
