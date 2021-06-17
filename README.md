@@ -37,6 +37,7 @@ proxy_pass http://18.118.2.179;
 
 systemctl restart nginx.service
 
+<img src =nginx.PNG>
 
 
 
