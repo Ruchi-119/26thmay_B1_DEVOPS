@@ -1,0 +1,19 @@
+## TASK 1
+ 1.Create a container with a name "example" using ubuntu:20.04 image with process running in background
+ 
+ docker pull ubuntu:20.04
+ 
+ docker run -it --name example ubuntu:20.04
+ 
+ docker run -d ubuntu:20.04 sleep 300
+ 
+ 2.  Get bash shell in above container
+ 
+docker exec -it ubuntu:20.04 bash
+ 
+ 3.Create a user test with pass q.
+ 
+ adduser test   //add a user "test" with password "q"
+ 
+ 
+ 
