@@ -9,7 +9,7 @@
  
  2.  Get bash shell in above container
  
-docker exec -it ubuntu:20.04 bash
+docker exec -it example bash
  
  3.Create a user test with pass q.
  
