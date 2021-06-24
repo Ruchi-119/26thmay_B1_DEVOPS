@@ -8,7 +8,9 @@ vim Dockerfile
 '''
 
 FROM alpine
+
 RUN apk update
+
 CMD ["echo","hello world","date" ,"ls" ,"pwd", "cal", "whoami"]
 
 ''''
